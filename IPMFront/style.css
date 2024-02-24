@@ -83,7 +83,7 @@ body {
     margin-right: auto;
     position: relative;
     padding-right: 803px;
-    left: 529px;
+    left: 520px;
 }
 
 .nav-list {
@@ -113,7 +113,7 @@ body {
 }
 
 .nav-list_link {
-    margin: 0 72px;
+    margin: 0 63px;
     text-decoration: none;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
