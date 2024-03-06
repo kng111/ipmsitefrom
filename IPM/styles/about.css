@@ -53,12 +53,12 @@
     margin-top: -222px;
 }
 
-.about__image {
-    width: 1%;
+.about__image img {
+    width: 65%;
     /* float: right; */
-    /* margin-left: -4px; */
-    margin-right: 323px;
-    height: 1%;
+    margin-left: 304px;
+    /* margin-right: 323px; */
+    height: 100%;
 }
 
 .bold {
@@ -66,6 +66,6 @@
 }
 
 .highlight {
-    color: brown;
+    color: rgb(184, 0, 6);
     font-weight: 600;
 }

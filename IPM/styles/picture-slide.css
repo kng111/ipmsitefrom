@@ -1,0 +1,13 @@
+.picture-slide {
+    margin: 0 auto;
+    max-width: 1520px;
+    padding-top: 100px;
+    padding-left: 200px;
+    padding-right: 200px;
+    position: relative;
+}
+
+.picture-slide img {
+    width: 108%;
+    margin-left: -43px;
+}
