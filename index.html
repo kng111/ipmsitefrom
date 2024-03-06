@@ -1,63 +1,103 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/normalize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
 
     <title>IPMLogistic</title>
+    <!-- Навигация-->
+    <link rel="stylesheet" href="./styles/header.css">
+    <!--Главный блок, начало-->
+    <link rel="stylesheet" href="./styles/preview.css">
+    <!--О компании-->
+    <link rel="stylesheet" href="./styles/about.css">
+    <!-- Статистика-->
+    <link rel="stylesheet" href="./styles/statistic.css">
+    <!-- Слайдер-->
+    <link rel="stylesheet" href="./styles/picture-slide.css">
+    <!-- Наши принципы-->
+    <link rel="stylesheet" href="./styles/principle.css">
+    <!-- Строгие сроки доставки-->
+    <link rel="stylesheet" href="./styles/timing.css">
+    <!-- Федеральное покрытие-->
+    <link rel="stylesheet" href="./styles/federal.css">
+    <!-- Нам доверили свои грузы-->
+    <link rel="stylesheet" href="./styles/agents.css">
+    <!-- Актуальное-->
+    <link rel="stylesheet" href="./styles/actual.css">
+    <!-- Новости-->
+    <link rel="stylesheet" href="./styles/news.css">
+    <!-- Подвал-->
+    <link rel="stylesheet" href="./styles/footer.css">
+
 </head>
 
-<body>
 
+<!-- Навигация-->
+
+<body>
     <header class="header">
-        <div class="background"></div>
-        <div class="container-header">
-            <nav class="nav">
-                <a href="#" class="logo"><img src="./img/logotype.svg" alt="IPMLogistic"></a>
-                <ul class="nav-list">
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list_link">О НАС</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list_link">ВАКАНСИИ</a>
-                    </li>
-                    <li class="nav-list__item">
-                        <a href="#" class="nav-list_link">КОНТАКТЫ</a>
-                    </li>
-                </ul>
-                <a href="tel:+7 495 796 57 37" class="telephone">+7 495 796 57 37</a>
-                <div class="arrow"></div>
-            </nav>
-            <div class="header_quote">
-                <h1 class="header_title">Безопасные и своевременные доставки с нашей логистической компанией: максимальная эффективность для вашего бизнеса</h1>
-            </div>
-            <div class="qualities">
-                <div class="qualities_block">НАДЁЖНОЕ ПАРТНЕРСТВО</div>
-                <div class="qualities_block">СТАБИЛЬНОСТЬ</div>
-                <div class="qualities_block">ПОСТОЯННОЕ РАЗВИТИЕ</div>
-            </div>
-            <div class="arrow2"></div>
-        </div>
+        <a href="#" class="header__logo">
+            <img src="./img/block_header/logo.svg" alt="logo">
+        </a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="#" class="header__link">О НАС</a>
+                    <div class="nav__arrow arrow"></div>
+                </li>
+                <li class="header__item"><a href="#" class="header__link vacance">ВАКАНСИИ</a></li>
+                <li class="header__item"><a href="#" class="header__link contacts">КОНТАКТЫ</a></li>
+                <li class="header__item"><a href="tel:+74957965737" class="header__link tel">+7 495 796 57 37</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <main class="main">
-        <div class="main-container">
-            <div class="section_header">
-                <h1 class="title-1">О компании</h2>
-            </div>
-            <div class="line5"></div>
-            <div class="about">
-                <p class="p1">IPMLogistic начала свой путь 14 июля 2017 года, когда была приобретена первая газель, и с того дня остается верной своим принципам.</p>
-                <p class="p2">Наша компания регулярно обновляет и модернизирует свой автопарк, чтобы гарантировать надежную и безопасную доставку грузов и контролировать каждый этап доставки.</p>
-            </div>
-            <div class="dot"></div>
-        </div>
-    </main>
+    <!--Главный блок, начало-->
+    <section>
+        <div class="preview">
+            <main>
+                <main__image>
+                    <div class="faw">
+                        <img src="./img/block_preview/faw_main.png" class="faw__img" alt="faw">
+                    </div>
+                </main__image>
 
-    <section class="section">
-        <div class="statistics_wrapper">
+                <main__text>
+                    <h1 class="main__title">Безопасные и своевременные доставки с нашей логистической компанией: <span>максимальная эффективность для вашего бизнеса </span></h1>
+                    <p class="main__desc">Мы стремимся к тому, чтобы наши клиенты могли полностью доверять нам свои грузы, зная, что они будут доставлены вовремя и в целости.</p>
+
+                    <div class="preview__arrow arrow2"></div>
+                    <div class="preview__line line"></div>
+                </main__text>
+            </main>
+        </div>
+    </section>
+
+
+    <!--О компании-->
+    <section class="about">
+        <h1 class="about__title">О компании</h1>
+        <div class="about__all">
+            <div class="about__text">
+                <h3 class="about__desc">
+                    <span class="bold">IPMLogistic</span> начала свой путь <span class="bold">14 июля 2017 года</span>, когда была приобретена первая газель, и с того дня остается верной <span class="highlight">своим принципам</span>. </h3>
+                <p class="about__desc2">Наша компания регулярно обновляет и модернизирует свой автопарк, чтобы гарантировать надежную и безопасную доставку грузов и контролировать каждый этап доставки.</p>
+                <div class="about__line line2"></div>
+            </div>
+            <div class="about__image">
+                <img src="./img/block_about/faw2.png" alt="faw">
+            </div>
+        </div>
+    </section>
+
+    <!-- Статистика-->
+    <section class="statistics">
+        <div class="statistic__wrapper">
             <div class="statistics_row">
                 <div class="statistics_item">
                     <h1 class="statistics_header">700+</h1>
@@ -68,7 +108,7 @@
                     <p class="statistics_text">филиалов во всех крупных городах России</p>
                 </div>
                 <div class="statistics_item">
-                    <h1 class="statistics_header">90+</h1>
+                    <h1 class="statistics_header">750+</h1>
                     <p class="statistics_text">фур ежедневно</p>
                 </div>
             </div>
@@ -82,224 +122,269 @@
                     <p class="statistics_text">грузов доставили</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="federal">
-        <div class="federal_coverage">
-            <h2 class="federal_header">Федеральное покрытие</h2>
-        </div>
-        <div class="icon_line_statistic">
-            <div class="statistic_item">
-                <img class="icon" src="./img/location.svg" alt="icon1">
-                <h1 class="head">50</h1>
-                <p class="descr">отделов продаж</p>
-            </div>
-            <div class="statistic_item">
-                <img class="icon" src="./img/location.svg" alt="icon2">
-                <h1 class="head">30</h1>
-                <p class="descr">центров управления водительским составом</p>
+            <div class="figure">
+                <img src="./img/block_statistics/triangle.png" alt="triangle">
             </div>
         </div>
     </section>
 
 
-
-    <div class="map"></div>
-    <div class="time"></div>
-    <div class="your_time">
-        <h1 class="header_time">IPMLogistic ценит Ваше время</h2>
-            <ul class="num_all">
-                <li class="num">Опыт и надёжность</li>
-                <li class="num">Один из самых крупных автопарков в России</li>
-                <li class="num">Безупречное качество и контроль услуг</li>
-                <li class="num">Безопасные и своевременные доставки только c нашей логистической компанией</li>
-            </ul>
-    </div>
-    </div>
-    </div>
+    <!-- Слайдер-->
+    <section class="picture-slide">
+        <img src="./img/block_picture-slide/road.png" alt="faw">
     </section>
 
-    <section class="trust">
-        <div class="trust_us">
-            <h1 class="trust_us_header">Нам доверили свои грузы</h2>
-        </div>
-        <div class="agents"></div>
-        <div class="dots_all">
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-            <div class="dot_agents"></div>
-        </div>
-    </section>
 
-    <div class="slider_agents middle">
-        <div class="slides">
-            <input type="radio" name="r" id="r1" checked>
-            <input type="radio" name="r" id="r2">
-            <input type="radio" name="r" id="r3">
-            <input type="radio" name="r" id="r4">
-
-            <div class="slide s1">
-                <img src="./img/agent1.png" alt="Изображение" class="img">
-            </div>
-            <div class="slide">
-                <img src="./img/agent2.png" alt="Изображение" class="img">
-            </div>
-            <div class="slide">
-                <img src="./img/agent3.png" alt="Изображение" class="img">
-            </div>
-
-        </div>
-        <div class="navigation">
-            <label for="r1" class="bar"></label>
-            <label for="r2" class="bar"></label>
-            <label for="r3" class="bar"></label>
-
-        </div>
-    </div>
-    </section>
-
+    <!-- Наши принципы-->
     <section class="principle">
-        <div class="our_principle">
-            <h2 class="our_principle_header">Наш главный принцип</h2>
-            <div class="quadro"></div>
-            <!-- <div class="border"></div> -->
-            <!-- <div class="strip_with_shadow"></div> -->
-            <div class="square_with_shadow"></div>
+        <div class="principle__title">
+            <div class="principle_line line3"></div>
+            <h1>Продуманные решения для вашей логистики: <span class="highlight2">доверьтесь опыту и надежности</span></h1>
+            <img src="./img/block_principle/triangle.png" alt="triangle2">
+        </div>
+        <div class="principle__wrapper">
+            <div class="principle_item">
+                <div class="principle_text">
+                    <div class="num">01</div>
+                    <h1 class="word">В <span class="highlight3">НУЖНОЕ</span> ВРЕМЯ</h1>
+                    <p>В управлении более 700 единиц техники разной грузоподъемностью, что позволяет осуществлять перевозку товаров в кратчайшие сроки с соблюдением всех требований к доставке.</p>
+                </div>
+                <div class="principle_img">
+                    <img src="./img/block_principle/faw.png" alt="faw3">
+                </div>
+            </div>
+            <div class="principle__wrapper">
+                <div class="principle_item">
+                    <div class="principle_text">
+                        <div class="num">02</div>
+                        <h1 class="word">В <span class="highlight3">НУЖНОМ</span> МЕСТЕ</h1>
 
+                        <p><span class="highlight4">Глобальное покрытие:</span> обеспечение доставки грузов в любую точку России.</p>
+                    </div>
+                    <div class="principle_img">
+                        <img src="./img/block_principle/faw.png" alt="faw3">
+                    </div>
+                </div>
+                <div class="principle__wrapper">
+                    <div class="principle_item">
+                        <div class="principle_text">
+                            <div class="num">03</div>
+                            <h1 class="word"><span class="highlight3">ВСЕГДА</span></h1>
+                            <p><span class="highlight4">Гарантия непрерывности обслуживания:</span> обеспечение работы 24/7 для оперативного реагирования на потребности клиентов.</p>
+                        </div>
+
+                        <div class="principle_img">
+                            <img src="./img/block_principle/faw.png" alt="faw3">
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+
+    <!-- Строгие сроки доставки-->
+    <section class="timing">
+
+        <h1 class="timing_title">Строгие сроки доставки</h1>
+        <div class="timing_triangle">
+            <div class="timing_line line4"></div>
+            <img src="./img/block_timing/left triangle.png" alt="left triangle" class="img1">
+            <img src="./img/block_timing/right triangle.png" alt="right triangle" class="img2">
         </div>
-        <div class="dot_column2">
-            <div class="dot2"></div>
-            <div class="dot3"></div>
-        </div>
-        <div class="we_principle">
-            <h1 class="we_header">ВСЕГДА</h1>
-            <ul class="we_are">
-                <li class="we_are_text">Гарантия непрерывности обслуживания: обеспечение работы 24/7 для оперативного реагирования на потребности клиентов.</li>
-                <li class="we_are_text">Постоянное совершенствование: поиск новых методов и технологий для улучшения качества услуг.</li>
-            </ul>
-            <div class="arrow3"></div>
+        <div class="timing_text">
+            <p>Оптимизация логистических процессов и использование <span class="highlight5">современных методов планирования и мониторинга.</span></p>
+            <p class="p2">Точное соблюдение временных рамок, <span class="highlight5">даже  при сложных условиях и длинных маршрутах.</span></p>
         </div>
     </section>
 
+
+    <!-- Федеральное покрытие-->
+    <section class="federal">
+        <h1 class="federal_title">Федеральное покрытие</h1>
+        <div class="federal_wrapper wrapper">
+            <div class="federal_item">
+                <div class="federal_icon">
+                    <img src="./img/block_federal/icon_location.svg" alt="left icon">
+                </div>
+                <h1>50</h1>
+                <p><span class="highlight6">отделов продаж</span></p>
+            </div>
+
+            <div class="federal_item">
+                <div class="federal_icon">
+                    <img src="./img/block_federal/icon_location.svg" alt="left icon">
+                </div>
+                <h1>30</h1>
+                <p>центров управления водительским составом</p>
+            </div>
+        </div>
+
+        <div class="federal_together">
+            <div class="map">
+                <img src="./img/block_federal/map2.png" alt="map">
+            </div>
+
+            <div class="advantages">
+                <h1>IPM Logistic <span class="highlight7">ценит</span> Ваше время</h1>
+                <img src="./img/block_federal/advantages.png" alt="advantages">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Нам доверили свои грузы-->
+    <section class="agents">
+        <h1>Нам <span class="highlight8">доверили</span> свои грузы</h1>
+        <img src="./img/block_agents/logotypes.jpg" alt="logotypes">
+    </section>
+
+
+    <!-- Актуальное-->
     <section class="actual">
-        <div class="actualy_title">
-            <h2 class="actual_title1">Актуальное сейчас</h2>
-        </div>
-        <div class="actual_for">
-            <div class="actual_blocks">
-                <h3 class="actual_header">Вопросы и ответы</h3>
-                <a href="#!" class="blocks_link"></a>
-                <img src="./img/Rectangle 156.png" alt="block_pink" class="block_pink_actual">
-                <p class="actual_text">Ответы на самые часто задаваемые вопросы</p>
+        <h1><span class="highlight9">Актуальное</span> сейчас</h1>
+        <div class="actual_cards">
+            <div class="cards_item">
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_icon">
+                            <img src="./img/block_actual/icon1.png" alt="icon">
+                        </div>
+                        <h3 class="card_title">Контакты</h3>
+                        <p class="card_descr">Связь с нашей компанией и предложения о партнерстве</p>
+                        <button class="card_btn">Посмотреть</button>
+                    </div>
+                </article>
             </div>
-            <div class="actual_blocks">
-                <a href="#!" class="blocks_link"></a>
-                <img src="./img/Rectangle 156.png" alt="block_pink" class="block_pink_actual">
-                <img class="icon-2" src="./img/house.png" alt="house">
-                <h3 class="actual_header">О компании</h3>
-                <p class="actual_text">Наша история, философия, бизнес-идея и ценности</p>
-            </div>
-            <div class="actual_blocks">
-                <a href="#!" class="blocks_link"></a>
-                <img src="./img/Rectangle 156.png" alt="block_pink" class="block_pink_actual">
-                <img class="icon-2" src="./img/vacance.png" alt="vacance">
-                <h3 class="actual_header">Вакансии</h3>
-                <p class="actual_text">Найдите свою вакансию в одном из 50 городов России</p>
-            </div>
-            <div class="actual_blocks">
-                <a href="#!" class="blocks_link"></a>
-                <img src="./img/Rectangle 156.png" alt="block_pink" class="block_pink_actual">
-                <img class="icon-2" src="./img/contacts.png" alt="contacts">
-                <h3 class="actual_header">Контакты</h3>
-                <p class="actual_text">Связь с нашей компанией</p>
-            </div>
-            <div class="arrow4"></div>
-            <div class="arrow5"></div>
-        </div>
 
+            <div class="cards_item">
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_icon">
+                            <img src="./img/block_actual/icon2.png" alt="icon">
+                        </div>
+                        <h3 class="card_title">О компании</h3>
+                        <p class="card_descr">Наша история, философия, бизнес-идея и ценности</p>
+                        <button class="card_btn">Посмотреть</button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cards_item">
+                <article class="card">
+                    <div class="card_content">
+                        <div class="card_icon">
+                            <img src="./img/block_actual/icon3.png" alt="icon">
+                        </div>
+                        <h3 class="card_title">Вакансии</h3>
+                        <p class="card_descr">Найдите свою вакансию в одном из 50 городов России</p>
+                        <button class="card_btn">Посмотреть</button>
+                    </div>
+                </article>
+            </div>
+        </div>
     </section>
 
+
+    <!-- Новости-->
     <section class="news">
+        <h1>Новости</h1>
+        <div class="news_cards">
+            <div class="news_item">
+                <article class="card_for_news">
+                    <img class="news_img_card" src="./img/block_news/faw.jpeg" alt="faw">
+                    <div class="news_card_top">
+                        <div class="info_flag">
+                            <h3>НОВЫЕ ФУРЫ FAW</h3>
+                        </div>
 
-        <div class="actualy_title">
-            <h2 class="news_title">Новости</h2>
+                        <div class="news_card_icon">
+                            <img src="./img/block_news/icon_news.svg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="news_card_descr">IPM Logistic принял новые фуры </p>
+                    <a href="#">БОЛЬШЕ</a>
+                </article>
+            </div>
+
+            <div class="news_item">
+                <article class="card_for_news">
+                    <img class="news_img_card" src="./img/block_news/faw.jpeg" alt="faw">
+                    <div class="news_card_top">
+                        <div class="info_flag">
+                            <h3>ОБЗОР НА НОВЫЙ ТЯГАЧ</h3>
+                        </div>
+
+                        <div class="news_card_icon">
+                            <img src="./img/block_news/icon_news.svg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="news_card_descr">Обзор на новый тягач от FAW </p>
+                    <a href="#">БОЛЬШЕ</a>
+                </article>
+            </div>
+
+            <div class="news_item">
+                <article class="card_for_news">
+                    <img class="news_img_card" src="./img/block_news/faw.jpeg" alt="faw">
+                    <div class="news_card_top">
+                        <div class="info_flag">
+                            <h3>НОВЫЕ ФУРЫ FAW</h3>
+                        </div>
+
+                        <div class="news_card_icon">
+                            <img src="./img/block_news/icon_news.svg" alt="icon">
+                        </div>
+                    </div>
+                    <p class="news_card_descr">IPM Logistic принял новые фуры </p>
+                    <a href="#">БОЛЬШЕ</a>
+                </article>
+            </div>
         </div>
 
-        <div class="news_all_block">
-            <div class="news_block">
-                <a href="#!" class="blocks_link">15 окт 2023</a>
-                <p class="date_news"></p>
-                <img src="./img/news1.png" alt="block_news" class="img_news">
-                <div class="news_quadro"></div>
-                <p class="news_text">Новое сотрудничество</p>
-            </div>
-            <div class="news_block">
-                <a href="#!" class="blocks_link2">1 янв 2024</a>
-                <p class="date_news"></p>
-                <img src="./img/news2.png" alt="block_news" class="img_news2">
-                <div class="news_quadro"></div>
-                <p class="news_text2">Обзор на новый тягач от Faw</p>
-            </div>
-            <div class="news_block">
-                <a href="#!" class="blocks_link">5 апр 2023</a>
-                <p class="date_news"></p>
-                <img src="./img/news3.png" alt="block_news" class="img_news">
-                <div class="news_quadro"></div>
-                <p class="news_text">IPM Logistic принял новые грузовики</p>
-            </div>
-            <div class="square_with_shadow2"></div>
-            <div class="arrow6"></div>
-            <div class="arrow7"></div>
-        </div>
-        <div class="numbers">1 2 3...10</div>
-
+        <img class="line_slider" src="./img/block_news/line.png" alt="slider">
     </section>
 
-    <footer class="footer">
-        <div class="footer_container">
-            <div class="footer_column1">
-                <img src="./img/logotype.svg" alt="logo" class="footer_logo">
-                <div class="footer_row">Номер</div>
-                <div class="footer_row">Ссылка на сайт</div>
+    <!-- Подвал-->
+    <footer>
+        <div class="copyright">
+            <p>© 2024г. ИП Милосердов Аркадий Викторович</p>
+        </div>
 
-            </div>
-            <div class="footer_column2">
-                <h3 class="title_footer1">О нас</h3>
+        <div class="container">
+            <a href="#">
+                <img src="./img/block_footer/LOGO.svg" alt="logo" class="footer_logo">
+            </a>
+            <div class="footer_grid">
+                <div class="footer_nav">
 
-                <ul class="footer_elements">
-                    <li class="elem1">О компании</li>
-                    <li class="elem1">Автопарк</li>
-                    <li class="elem1">Новости</li>
-                    <li class="elem1">Пресс-центр</li>
+                    <nav class="footer-list">
+                        <h3 class="footer_title">Связаться с нами<span class="footer_arrow">↓</span></h3>
+                        <ul class="footer_list">
+                            <li> <a href="#">sales@ipmlogist.ru</a></li>
+                            <li><a href="tel:+74957965737">+7 495 796 57 37</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-                </ul>
-            </div>
-            <div class="footer_column3">
-                <h3 class="title_footer2">Вакансии</h3>
-
-                <ul class="footer_elements">
-                    <li class="elem1">Водителям</li>
-                    <li class="elem1">Вопросы и ответы</li>
-
-
-                </ul>
-            </div>
-            <div class="footer_socials">
-                <h3 class="title_footer2">Контакты</h3>
-                <ul class="footer_socials_icon">
-                    <li class="whatsapp">
-                        <a href="#!" class="footer-link"></a>
-                        <img src="./img/whatsapp.png" alt="whatsapp">
-                    </li>
-                    <li class="tg">
-                        <a href="#!" class="footer-link"></a>
-                        <img src="./img/tg.png" alt="tg"></li>
-                    <li class="vk">
-                        <a href="#!" class="footer-link"></a>
-                        <img src="./img/vk.png" alt="vk"></li>
-                </ul>
+                <div class="footer_address">
+                    <nav class="footer-list">
+                        <h3 class="footer_title">Юр.адрес</h3>
+                        <ul class="footer_list">
+                            <li> ​г. Москва, Метро. Румянцево​, ул. 22 километр Киевское шоссе, вл 4 блок А</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
+
+        <div class="copyright2">
+            <p>Все авторские права защищены</p>
+        </div>
+
+        <img src="./img/block_footer/triangle.png" alt="triangle" class="footer_triangle">
+
     </footer>
+
+
+</body>
+
+</html>
