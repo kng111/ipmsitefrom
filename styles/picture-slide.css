@@ -11,3 +11,13 @@
     width: 108%;
     margin-left: -43px;
 }
+
+@media(max-width:376px) {
+    .picture-slide {
+        padding-top: 52px;
+    }
+    .picture-slide img {
+        width: 327px;
+        margin-left: -174px;
+    }
+}

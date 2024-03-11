@@ -23,3 +23,16 @@
     margin-top: -12px;
     height: auto;
 }
+
+@media(max-width:376px) {
+    .agents h1 {
+        font-size: 20px;
+        margin-left: -48px;
+        margin-top: 51px;
+    }
+    .agents img {
+        margin-left: -103px;
+        width: 393px;
+        margin-top: -4px;
+    }
+}
