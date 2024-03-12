@@ -18,6 +18,7 @@
 .about__title {
     font-size: 50px;
     font-weight: 700;
+    white-space: nowrap;
 }
 
 .about__desc {
@@ -68,4 +69,46 @@
 .highlight {
     color: rgb(184, 0, 6);
     font-weight: 600;
+}
+
+@media(max-width:376px) {
+    .about__title {
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    .about {
+        padding-left: 0;
+        margin-top: 71px;
+        max-width: 376px;
+        padding-right: 0;
+    }
+    .about__desc {
+        line-height: 22px;
+        font-size: 13px;
+        margin-left: 7px;
+        width: 269px;
+        margin-top: 10px;
+    }
+    .about__desc2 {
+        width: 257px;
+        margin-left: 8px;
+        line-height: 17px;
+        margin-top: 17px;
+        font-size: 11px;
+    }
+    .about__line {
+        width: 23px;
+        margin-left: -17.5px;
+        margin-top: -218px;
+        height: 225px;
+    }
+    .about__image img {
+        width: 254px;
+        margin-left: -312px;
+        margin-top: 227px;
+        height: 154px;
+    }
+    .about__all {
+        margin-left: 53px;
+    }
 }
