@@ -195,7 +195,9 @@
 
 /* Для размеров экрана до 376px */
 
-@media (max-width: 376px) {
+@media (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    /* Ваши стили здесь */
+
     .header {
         padding-left: 20px;
         padding-right: 10px;
@@ -224,3 +226,5 @@
         margin-left: 300px;
     }
 }
+
+
