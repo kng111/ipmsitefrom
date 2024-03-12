@@ -73,12 +73,14 @@
 
 @media(max-width:376px) {
     .about__title {
-        font-size: 25px;
-        margin-left: -29px;
+        font-size: 20px;
+        margin-left: 40px;
     }
     .about {
-        padding-left: 79px;
-        margin-top: 94px;
+        padding-left: 0;
+        margin-top: 71px;
+        max-width: 376px;
+        padding-right: 0;
     }
     .about__desc {
         line-height: 22px;
@@ -96,14 +98,17 @@
     }
     .about__line {
         width: 23px;
-        margin-left: -30.5px;
+        margin-left: -17.5px;
         margin-top: -218px;
-        height: 223px;
+        height: 225px;
     }
     .about__image img {
         width: 254px;
-        margin-left: -227px;
+        margin-left: -312px;
         margin-top: 227px;
         height: 154px;
+    }
+    .about__all {
+        margin-left: 53px;
     }
 }

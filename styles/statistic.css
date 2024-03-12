@@ -60,15 +60,19 @@
         font-size: 15px;
         width: 229px;
     }
+    /* .statistic__wrapper {
+        margin-left: 53px;
+    } */
     .figure img {
         width: 40%;
-        margin-left: 5px;
+        margin-left: -23px;
         margin-top: -35px;
         transform: rotate(-90deg);
     }
     .statistics {
-        margin: 0 auto;
-        padding-left: 45px;
+        padding-right: 0;
+        padding-left: 51px;
+        max-width: 376px;
     }
     .statistics_row {
         flex-direction: column;

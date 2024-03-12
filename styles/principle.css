@@ -111,18 +111,25 @@
 }
 
 @media(max-width:376px) {
+    .principle {
+        max-width: 376px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 55px;
+    }
+    .principle__title {
+        width: 284px;
+    }
     .principle__title h1 {
         font-size: 18px;
         line-height: 23px;
-        margin-top: -7px;
-        margin-left: -522px;
-        width: 267px;
+        margin-top: 41px;
+        margin-left: 42px;
     }
     .principle__title img {
-        position: absolute;
-        width: 133px;
-        margin-left: -237px;
-        margin-top: -81px;
+        width: 121px;
+        margin-left: 293px;
+        margin-top: -60px;
     }
     .num {
         font-size: 35px;
@@ -132,14 +139,15 @@
     .word {
         line-height: 26px;
         font-size: 19px;
-        margin-left: -16px;
+        margin-left: -17px;
         margin-top: 9px;
         white-space: normal;
+        width: 122px;
     }
     .principle_img img {
-        width: 186px;
-        height: 169px;
-        margin-left: -52px;
+        width: 174px;
+        height: 159px;
+        margin-left: -197px;
         margin-top: -32px;
     }
     .principle_text p {
@@ -151,7 +159,7 @@
     }
     .principle_text {
         margin-top: -30px;
-        padding: 51px;
-        margin-left: -95px;
+        padding: 41px;
+        margin-left: 17px;
     }
 }

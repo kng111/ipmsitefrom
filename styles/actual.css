@@ -96,13 +96,18 @@
 }
 
 @media(max-width:376px) {
+    .actual {
+        max-width: 376px;
+        padding-top: 34px;
+        padding-left: 0;
+        padding-right: 0;
+    }
     .actual h1 {
         font-size: 20px;
-        margin-left: -249px;
+        margin-left: 84px;
     }
     .actual_cards {
-        margin-left: -53px;
-        margin-right: 202px;
+        margin-left: 284px;
         display: flex;
         justify-content: space-between;
         color: white;

@@ -18,6 +18,11 @@
     }
     .picture-slide img {
         width: 327px;
-        margin-left: -174px;
+        margin-left: 16px;
+    }
+    .picture-slide {
+        max-width: 375px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
